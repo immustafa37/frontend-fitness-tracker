@@ -1,0 +1,21 @@
+.theme-toggle {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.light {
+  color: #333;
+}
+
+.dark {
+  color: #fff;
+}
