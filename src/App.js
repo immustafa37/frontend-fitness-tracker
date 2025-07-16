@@ -1,33 +1,31 @@
 import React from 'react';
-import { ThemeProvider } from './context/ThemeContext';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home/Home';
-import Diet from './pages/Diet/Diet';
-import Exercise from './pages/Exercise/Exercise';
-import Fasting from './pages/Fasting/Fasting';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Activities from './pages/Activities/Activities';
+import Nutrition from './pages/Nutrition/Nutrition';
+import Settings from './pages/Settings/Settings';
+import './styles/glassmorphism.css';
+import './styles/neumorphism.css';
+import './styles/darkmode.css';
 
 function App() {
   return (
-    <ThemeProvider>
-      <Router>
-        <div className="app">
-          <nav className="navbar">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/diet" className="nav-link">Diet</Link>
-            <Link to="/exercise" className="nav-link">Exercise</Link>
-            <Link to="/fasting" className="nav-link">Fasting</Link>
-          </nav>
-          
+    <Router>
+      <div className="App">
+        <Navbar />
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/diet" element={<Diet />} />
-            <Route path="/exercise" element={<Exercise />} />
-            <Route path="/fasting" element={<Fasting />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/activities" element={<Activities />} />
+            <Route path="/nutrition" element={<Nutrition />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
-        </div>
-      </Router>
-    </ThemeProvider>
+        </main>
+      </div>
+    </Router>
   );
 }
 

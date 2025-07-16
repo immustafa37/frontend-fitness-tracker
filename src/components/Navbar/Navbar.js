@@ -1,21 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../../context/ThemeContext';
+import NeumoButton from '../NeumoButton/NeumoButton';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { theme } = useTheme();
-
   return (
-    <nav className={`navbar ${theme}`}>
-      <div className="nav-links">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/diet" className="nav-link">Diet</Link>
-        <Link to="/exercise" className="nav-link">Exercise</Link>
-        <Link to="/fasting" className="nav-link">Fasting</Link>
+    <nav className="navbar">
+      <div className="navbar-brand">
+        <Link to="/">HealthTracker</Link>
       </div>
-      <ThemeToggle />
+      <div className="navbar-links">
+        <Link to="/dashboard"><NeumoButton>Dashboard</NeumoButton></Link>
+        <Link to="/activities"><NeumoButton>Activities</NeumoButton></Link>
+        <Link to="/nutrition"><NeumoButton>Nutrition</NeumoButton></Link>
+        <Link to="/settings"><NeumoButton>Settings</NeumoButton></Link>
+      </div>
+      <div className="navbar-theme">
+        <ThemeToggle />
+      </div>
     </nav>
   );
 };
