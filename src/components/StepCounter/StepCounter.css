@@ -1,0 +1,44 @@
+.step-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.step-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.step-goal {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.step-progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e0e5ec;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.step-progress-fill {
+  height: 100%;
+  background: #4CAF50;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.dark-mode .step-progress-bar {
+  background: #353535;
+}
