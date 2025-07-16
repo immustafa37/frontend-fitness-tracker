@@ -1,0 +1,220 @@
+.nutrition-page {
+  padding: 2rem;
+}
+
+.nutrition-page h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.nutrition-summary {
+  margin-bottom: 2rem;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.summary-header h2 {
+  margin: 0;
+}
+
+.summary-date {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.summary-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.calorie-summary {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.calorie-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.calorie-total {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FF9800;
+}
+
+.calorie-goal {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.calorie-remaining {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.macro-summary {
+  flex: 1;
+  min-width: 250px;
+}
+
+.macro-item {
+  margin-bottom: 1rem;
+}
+
+.macro-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.macro-value {
+  font-weight: bold;
+  margin: 0.2rem 0;
+}
+
+.macro-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.macro-fill {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.protein {
+  background: #4CAF50;
+}
+
+.carbs {
+  background: #2196F3;
+}
+
+.fat {
+  background: #FF5722;
+}
+
+.meals-section {
+  margin-top: 2rem;
+}
+
+.meals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.meals-header h2 {
+  margin: 0;
+}
+
+.add-meal-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-meal-button:hover {
+  background: #3d8b40;
+}
+
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.meal-card {
+  padding: 1.5rem;
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.meal-header h3 {
+  margin: 0;
+}
+
+.meal-calories {
+  font-weight: bold;
+  color: #FF9800;
+}
+
+.meal-macros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.macro {
+  text-align: center;
+}
+
+.macro-label {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.macro-value {
+  font-weight: bold;
+  margin-top: 0.2rem;
+}
+
+.meal-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-button, .delete-button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.edit-button {
+  background: #2196F3;
+  color: white;
+}
+
+.delete-button {
+  background: #FF5252;
+  color: white;
+}
+
+.edit-button:hover, .delete-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .summary-content {
+    flex-direction: column;
+  }
+  
+  .calorie-summary {
+    justify-content: center;
+  }
+}
