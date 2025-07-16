@@ -21,11 +21,21 @@ const Navbar = () => {
           </button>
           <Link to="/">HealthTracker</Link>
         </div>
+        
+        {/* Desktop Navigation Links */}
+        <div className="desktop-links">
+          <Link to="/dashboard"><NeumoButton>Dashboard</NeumoButton></Link>
+          <Link to="/activities"><NeumoButton>Activities</NeumoButton></Link>
+          <Link to="/nutrition"><NeumoButton>Nutrition</NeumoButton></Link>
+          <Link to="/settings"><NeumoButton>Settings</NeumoButton></Link>
+        </div>
+        
         <div className="navbar-theme">
           <ThemeToggle />
         </div>
       </nav>
 
+      {/* Mobile Sidebar */}
       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
         <div className="sidebar-links">
           <Link to="/dashboard" onClick={() => setIsSidebarOpen(false)}>
