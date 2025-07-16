@@ -1,0 +1,39 @@
+.neu-card {
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  background: var(--bg-color);
+  box-shadow:  8px 8px 16px #d1d1d1,
+              -8px -8px 16px #ffffff;
+}
+
+.theme-dark .neu-card {
+  box-shadow:  8px 8px 16px #0a0a0a,
+              -8px -8px 16px #1a1a1a;
+}
+
+.neu-button {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: var(--bg-color);
+  box-shadow:  5px 5px 10px #d1d1d1,
+              -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.theme-dark .neu-button {
+  box-shadow:  5px 5px 10px #0a0a0a,
+              -5px -5px 10px #1a1a1a;
+}
+
+.neu-button:active {
+  box-shadow: inset 5px 5px 10px #d1d1d1,
+              inset -5px -5px 10px #ffffff;
+}
+
+.theme-dark .neu-button:active {
+  box-shadow: inset 5px 5px 10px #0a0a0a,
+              inset -5px -5px 10px #1a1a1a;
+}
