@@ -1,0 +1,137 @@
+.sleep-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.sleep-visual {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sleep-moon {
+  font-size: 3rem;
+  z-index: 2;
+}
+
+.sleep-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sleep-star {
+  position: absolute;
+  font-size: 0.8rem;
+  animation: twinkle 2s infinite alternate;
+}
+
+.sleep-star:nth-child(1) { top: 20%; left: 30%; animation-delay: 0s; }
+.sleep-star:nth-child(2) { top: 40%; left: 70%; animation-delay: 0.5s; }
+.sleep-star:nth-child(3) { top: 70%; left: 20%; animation-delay: 1s; }
+.sleep-star:nth-child(4) { top: 10%; left: 60%; animation-delay: 1.5s; }
+.sleep-star:nth-child(5) { top: 60%; left: 50%; animation-delay: 2s; }
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+.sleep-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sleep-hours {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.sleep-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sleep-unit {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.sleep-goal {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.sleep-progress {
+  width: 100%;
+  height: 8px;
+  background: #e0e5ec;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.sleep-progress-bar {
+  height: 100%;
+  background: #2196F3;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.sleep-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.sleep-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #e0e5ec;
+  color: #2196F3;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.sleep-button:hover {
+  box-shadow: 1px 1px 3px #b8b9be, -1px -1px 3px #ffffff;
+}
+
+.sleep-button:active {
+  box-shadow: inset 1px 1px 3px #b8b9be, inset -1px -1px 3px #ffffff;
+}
+
+.dark-mode .sleep-progress {
+  background: #353535;
+}
+
+.dark-mode .sleep-button {
+  background: #2a2a2a;
+  box-shadow: 3px 3px 6px #1f1f1f, -3px -3px 6px #353535;
+}
+
+.dark-mode .sleep-button:hover {
+  box-shadow: 1px 1px 3px #1f1f1f, -1px -1px 3px #353535;
+}
+
+.dark-mode .sleep-button:active {
+  box-shadow: inset 1px 1px 3px #1f1f1f, inset -1px -1px 3px #353535;
+}
