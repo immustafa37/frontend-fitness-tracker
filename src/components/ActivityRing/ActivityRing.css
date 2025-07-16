@@ -1,0 +1,40 @@
+.activity-ring-container {
+  position: relative;
+  display: inline-block;
+}
+
+.activity-ring {
+  display: block;
+}
+
+.activity-ring-bg {
+  transition: stroke 0.3s ease;
+}
+
+.activity-ring-progress {
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.activity-ring-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.activity-ring-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.activity-ring-text {
+  font-size: 0.9rem;
+  display: block;
+  opacity: 0.8;
+}
+
+.dark-mode .activity-ring-bg {
+  stroke: #353535;
+}
