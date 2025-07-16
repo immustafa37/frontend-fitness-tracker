@@ -1,0 +1,35 @@
+.neumo-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background: #e0e5ec;
+  box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #ffffff;
+  color: #4d4d4d;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.neumo-button:hover {
+  box-shadow: 2px 2px 5px #b8b9be, -2px -2px 5px #ffffff;
+}
+
+.neumo-button:active {
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -2px -2px 5px #ffffff;
+}
+
+.dark-mode .neumo-button {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  box-shadow: 5px 5px 10px #1f1f1f, -5px -5px 10px #353535;
+}
+
+.dark-mode .neumo-button:hover {
+  box-shadow: 2px 2px 5px #1f1f1f, -2px -2px 5px #353535;
+}
+
+.dark-mode .neumo-button:active {
+  box-shadow: inset 2px 2px 5px #1f1f1f, inset -2px -2px 5px #353535;
+}
