@@ -1,0 +1,53 @@
+:root {
+  --bg-light: #f0f2f5;
+  --text-light: #333333;
+  --primary-light: #4a6fa5;
+  --secondary-light: #6a8fc7;
+}
+
+.dark-mode {
+  --bg-dark: #121212;
+  --text-dark: #e0e0e0;
+  --primary-dark: #6a8fc7;
+  --secondary-dark: #4a6fa5;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.primary-color {
+  color: var(--primary-light);
+}
+
+.secondary-color {
+  color: var(--secondary-light);
+}
+
+.dark-mode .primary-color {
+  color: var(--primary-dark);
+}
+
+.dark-mode .secondary-color {
+  color: var(--secondary-dark);
+}
+
+/* Additional dark mode overrides */
+.dark-mode a {
+  color: #6a8fc7;
+}
+
+.dark-mode a:hover {
+  color: #8fa8d1;
+}
+
+.dark-mode hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
