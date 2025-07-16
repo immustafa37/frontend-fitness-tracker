@@ -1,0 +1,71 @@
+.calorie-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.calorie-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.calorie-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calorie-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.calorie-label {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.calorie-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.calorie-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #e0e5ec;
+  color: #FF5722;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #ffffff;
+  transition: all 0.2s ease;
+}
+
+.calorie-button:hover {
+  box-shadow: 1px 1px 3px #b8b9be, -1px -1px 3px #ffffff;
+}
+
+.calorie-button:active {
+  box-shadow: inset 1px 1px 3px #b8b9be, inset -1px -1px 3px #ffffff;
+}
+
+.dark-mode .calorie-button {
+  background: #2a2a2a;
+  box-shadow: 3px 3px 6px #1f1f1f, -3px -3px 6px #353535;
+}
+
+.dark-mode .calorie-button:hover {
+  box-shadow: 1px 1px 3px #1f1f1f, -1px -1px 3px #353535;
+}
+
+.dark-mode .calorie-button:active {
+  box-shadow: inset 1px 1px 3px #1f1f1f, inset -1px -1px 3px #353535;
+}
