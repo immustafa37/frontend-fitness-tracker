@@ -71,10 +71,10 @@
   width: 100%;
   text-align: left;
   padding: 0.8rem 1rem;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.795);
   backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.534);
+  box-shadow: 0 1px 2px rgb(0, 0, 0);
   transition: all 0.2s ease;
 }
 
@@ -106,10 +106,10 @@
 
 /* Dark mode styles */
 .dark-mode .sidebar {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.473);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode .desktop-links .neumo-button {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.562);
 }
